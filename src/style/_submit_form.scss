@@ -1,0 +1,13 @@
+.submit_form{
+  display: flex;
+  border: 0.5px solid $gray;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: $container-margin-y $container-margin-x;
+
+  > ul{
+    padding: $container-padding-y $container-padding-x
+  }
+}

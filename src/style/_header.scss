@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $container-padding-y $container-padding-x;
+  border-bottom: 1px solid #8899a6;
+
+  nav {
+    @extend .menu;
+  }
+
+  nav > ul > li{
+    @include btn-variant($primary-color, $body-bg, $primary-color);
+    &:last-child {
+      @include btn-variant(white, $primary-color, $primary-color);
+    }
+  }
+}
