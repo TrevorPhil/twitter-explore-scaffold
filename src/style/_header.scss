@@ -12,7 +12,7 @@
   nav > ul > li{
     @include btn-variant($primary-color, $body-bg, $primary-color);
     &:last-child {
-      @include btn-variant(white, $primary-color, $primary-color);
+      @include btn-variant($white, $primary-color, $primary-color);
     }
   }
 }

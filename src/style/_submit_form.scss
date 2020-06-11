@@ -8,6 +8,7 @@
 
 
   > h2{
+    padding: $container-padding-y $container-padding-x;
     text-align: center;
     color: $white;
   }
@@ -18,6 +19,7 @@
     > li{
       display: flex;
       flex-direction: column;
+      padding: $or-padding-y 0;
       > input{
         padding: $input-padding-y 0;
         background: $body-bg;
@@ -28,6 +30,18 @@
       &:nth-child(3){
         padding: $input-padding-y 0;
         color: $primary-color;
+      }
+      &:nth-child(4){
+        @include wide-btn-variant($primary-color, $body-bg, $primary-color);
+      }
+      &:nth-child(5){
+        padding: $or-padding-y 0;
+        justify-content: center;
+        align-items: center;
+      }
+      &:nth-child(6){
+        @include wide-btn-variant($white, $primary-color, $primary-color);
+        margin-bottom: $container-padding-y;
       }
     }
   }

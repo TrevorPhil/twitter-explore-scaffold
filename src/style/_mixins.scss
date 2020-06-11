@@ -13,6 +13,17 @@
   text-align: center;
 }
 
+@mixin wide-btn-variant($color, $bg-color, $border-color){
+  justify-content: center;
+  align-items: center;
+  color: $color;
+  background: $bg-color;
+  padding: $btn-padding-y $btn-padding-x;
+  border-radius: 80px;
+  border: 1px solid $border-color;
+  text-align: center;
+}
+
 @mixin input-field($border-color){
   border-bottom: 1px solid $border-color;
 }
