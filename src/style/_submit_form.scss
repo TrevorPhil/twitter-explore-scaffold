@@ -2,12 +2,33 @@
   display: flex;
   border: 0.5px solid $gray;
   border-radius: 30px;
-  justify-content: center;
-  align-items: center;
+  width: 500px;
   flex-direction: column;
   margin: $container-margin-y $container-margin-x;
 
+
+  > h2{
+    text-align: center;
+    color: $white;
+  }
+
   > ul{
-    padding: $container-padding-y $container-padding-x
+    padding: $container-padding-y $container-padding-x;
+
+    > li{
+      display: flex;
+      flex-direction: column;
+      > input{
+        padding: $input-padding-y 0;
+        background: $body-bg;
+        border: none;
+        border-bottom: 1px solid $gray;
+        color: $white;
+      }
+      &:nth-child(3){
+        padding: $input-padding-y 0;
+        color: $primary-color;
+      }
+    }
   }
 }
